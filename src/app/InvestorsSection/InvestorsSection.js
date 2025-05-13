@@ -2,14 +2,21 @@ import React from "react";
 
 const InvestorsSection = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-between bg-white px-12 mt-10 rounded-2xl overflow-hidden gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between bg-white lg:px-12 px-4 mt-10 rounded-2xl overflow-hidden gap-6">
             <div className="flex-1">
                 <p className="text-sm text-gray-400 uppercase tracking-wider mb-2">We're here to help</p>
-                <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+                <h2 className="text-4xl font-bold text-gray-900 forDes leading-tight">
                     Over <span className="text-orange-500">35000</span><br />
                     satisfied investors<br />
                     in our treasury.
                 </h2>
+
+                <h2 className="text-4xl forMob font-bold text-gray-900 leading-tight">
+                    Over <span className="text-orange-500">35000</span><br />
+                    satisfied investors<br />
+                    in our treasury.
+                </h2>
+
             </div>
 
             <div className="flex-1 text-gray-600 text-sm leading-relaxed">

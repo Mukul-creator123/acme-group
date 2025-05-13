@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function SimpleSlider() {
     const [isClient, setIsClient] = useState(false);
@@ -46,25 +45,22 @@ export default function SimpleSlider() {
     return (
         <>
             <div className="adadsa">
-               <div className="w-full bg-cover bg-center p-10" style={{ backgroundImage: "url('/IMAGES/bgg.jpg')" }}>
-    
-
-                <div className=' top-0'>
-                    <Slider {...settings}>
-                        {images.map((image, index) => (
-                            <div key={index} className=" justify-center   ">
-                                <img
-                                    src={image.logo}
-                                    alt={`Image ${index + 1}`}
-                                    className="object-contain h-full w-[243px] rounded-md"
-                                />
-                            </div>
-                        ))}
-                    </Slider>
+                <div className="w-full bg-cover bg-center p-10" style={{ backgroundImage: "url('/IMAGES/bgg.jpg')" }}>
+                    <div className=' top-0'>
+                        <Slider {...settings}>
+                            {images.map((image, index) => (
+                                <div key={index} className=" justify-center px-2">
+                                    <img
+                                        src={image.logo}
+                                        alt={`Image ${index + 1}`}
+                                        className="object-contain h-full w-[243px] rounded-md"
+                                    />
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
             </div>
-</div>
-
         </>
     );
 }
