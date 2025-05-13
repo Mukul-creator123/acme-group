@@ -1,4 +1,5 @@
-import AcmeGroup from "./AcmeGroup/Acmegroup";
+import AcmeGroup from "./AcmeGroup/Acme";
+import AcmeVisionSection from "./AcmeVision/Acmevision";
 import Blog from "./Blog/Blog";
 import FinancialBanner from "./Financial/FinancialBanner";
 import Footer from "./Footer/footer";
@@ -13,6 +14,7 @@ export default function Home() {
       <InvestorsSection />
       <FounderCard />
       <FinancialBanner />
+      <AcmeVisionSection />
       <AcmeGroup />
       <Blog />
       <Footer />
