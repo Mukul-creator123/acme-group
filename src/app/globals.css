@@ -24,3 +24,52 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-dialog>.p-dialog-mask {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+::placeholder {
+  font-size: 13px;
+}
+
+.btnHover:hover {
+  cursor: pointer;
+}
+
+.p-dialog-header-icon {
+  margin: 20px 20px 0px !important;
+}
+
+.blogImage {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.blogImage img {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.blogImage img:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(-0%, -50%);
+}
+
+.blogImage {
+  border: 1px solid #ddd;
+}
+
+.blogImage {
+  background-image: url('/Images/bgg1.png');
+}
+
+.cardWidth {
+  width: 33.3%;
+}

@@ -1,10 +1,20 @@
+import AcmeGroup from "./AcmeGroup/Acmegroup";
+import Blog from "./Blog/Blog";
+import FinancialBanner from "./Financial/FinancialBanner";
 import Footer from "./Footer/footer";
+import FounderCard from "./FounderCard/FounderCard";
 import Header from "./Header/header";
+import InvestorsSection from "./InvestorsSection/InvestorsSection";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <InvestorsSection />
+      <FounderCard />
+      <FinancialBanner />
+      <AcmeGroup />
+      <Blog />
       <Footer />
     </>
   );

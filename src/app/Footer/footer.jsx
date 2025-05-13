@@ -2,10 +2,12 @@ import { FaFacebookF, FaInstagram, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#293A58] text-white py-8 px-6 mt-12" style={{paddingLeft: "40px"}}>
+        <footer className="bg-[#293A58] text-white py-8 px-6 mt-12" style={{ paddingLeft: "40px" }}>
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 border-b border-white/20 pb-6">
                 <div>
-                    <h3 className="font-semibold text-lg">ACME GROUP</h3>
+                    <div className="flex items-center gap-4" style={{ width: "140px" }}>
+                        <img src='/Images/footerLogo.png' alt='footer logo' className='w-full' />
+                    </div>
                     <p className="mt-2 font-semibold">For Updates</p>
                     <p className="text-sm">Follow us on Instagram</p>
                     <div className='flex gap-6 mt-2'>
