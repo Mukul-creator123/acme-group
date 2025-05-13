@@ -1,6 +1,6 @@
 export default function FounderCard() {
     return (
-        <div className="bg-white mt-16 mx-10 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 relative overflow-hidden"
+        <div className="bg-white lg:mt-16 mt-10 lg:mx-10 mx-4 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 relative overflow-hidden"
             style={{
                 backgroundImage: 'url("/Images/bgg1.png")',
                 backgroundPosition: 'center',

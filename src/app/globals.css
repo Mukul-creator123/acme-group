@@ -76,3 +76,53 @@ body {
 
 
 
+.menuBar {
+  display: flex;
+}
+
+.bannerImageMob {
+  display: none;
+}
+
+.forMob {
+  display: none;
+}
+
+.custom-dialog {
+  width: 35vw;
+}
+
+@media(max-width: 767px) {
+  .menuBar {
+    display: none;
+  }
+
+  .custom-dialog {
+    width: 100%;
+    margin: 0px 20px;
+  }
+
+  .forMob {
+    display: block;
+  }
+
+  .forDes {
+    display: none;
+  }
+
+  .cardWidth {
+    width: 100%;
+  }
+
+  .footerLogo {
+    margin: auto;
+  }
+
+  .bannerImageMob {
+    display: block;
+  }
+
+  .bannerImage {
+    display: none;
+  }
+}
