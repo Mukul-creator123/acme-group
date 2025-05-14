@@ -8,7 +8,7 @@ import FounderCard from "./FounderCard/FounderCard";
 import Header from "./Header/header";
 import InvestorsSection from "./InvestorsSection/InvestorsSection";
 import SimpleSlider from "./Slider/slider";
-
+import Slider2 from "./Slider2/slider"
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
       <FinancialBanner />
       <AcmeVisionSection />
       <AcmeGroup />
-      {/* <Blog />
-      <Slider /> */}
-      <SimpleSlider />      
+      <SimpleSlider />   
+      <Blog/>
+      <Slider2/>   
       <Footer />
     </>
   );

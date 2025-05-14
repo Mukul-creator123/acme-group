@@ -58,7 +58,7 @@ export default function SimpleSlider() {
 
     return (
         <>
-            <div className="adadsa">
+            <div >
                 <div className="w-full bg-cover bg-center lg:p-10 p-4" style={{ backgroundImage: "url('/IMAGES/bgg.jpg')" }}>
                     <div className=' top-0'>
                         <Slider {...settings}>
