@@ -2,29 +2,43 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-
+import { FaArrowUp, FaArrowDown} from "react-icons/fa";
 
 export default function SimpleSlider() {
-
-
     const [client, setClient] = useState(false);
 
     useEffect(() => {
         setClient(true);
     }, []);
 
-
-    var settings = {
+    const settings = {
         dots: false,
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         infinite: true,
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
+         responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     };
 
+
+
     if (!client) return null;
+
     const images = [
         {
             logo: "/IMAGES/Birla.png",
@@ -33,7 +47,6 @@ export default function SimpleSlider() {
             price: "625.50",
             changePercent: "-0.50%",
             changeValue: "-3.15"
-
         },
         {
             logo: "/IMAGES/ICICI.png",
@@ -61,45 +74,47 @@ export default function SimpleSlider() {
         },
         {
             logo: "/IMAGES/SBI.png",
-            name: "State Bank of ",
+            name: "State Bank of",
             sub: "India",
             price: "820.85",
             changePercent: "+0.43%",
             changeValue: "+3.50"
         }
+    ];
 
+    return (
+        <div className="px-8">
+            <Slider {...settings}>
+                {images.map((image, index) => {
+                    const isPositive = image.changeValue.startsWith("+");
+                    const isBothPositive =
+                        parseFloat(image.changePercent) >= 0 &&
+                        parseFloat(image.changeValue) >= 0;
+                    return (
+                        <div key={index} className="p-2">
+                            <div className="bg-white shadow-md rounded-xl p-4 space-y-2">
+                                <div className="">
+                                    <img src={image.logo} alt={`Logo ${index + 1}`} className="h-8 w-auto object-contain" />
+                                </div >
+                                <h1 className="lg:text-lg text-sm font-bold">{image.name}</h1>
+                                <div className="flex justify-between">
+                                    <h2 className=" lg:text-lg text-sm font-bold">{image.sub}</h2>
+                                    <h3 className=" lg:font-bold text-sm">{image.price}</h3>
+                                </div>
+                                <div className={`text-sm font-medium ${isPositive ? 'text-green-600' : 'text-red-500'}`}>
+                                    <div className="flex justify-between">
+                                        <div>
+                                           { isBothPositive ? <FaArrowUp /> :<FaArrowDown />}
+                                        </div>
+                                        <div> {image.changePercent}</div>
+                                        <div>{image.changeValue}</div>
 
-
-
-    ]
-    return (   
-
-        <div>
-             <Slider {...settings}>
-                {images.map((image, index) => (
-                    <div key={index}  
-                    className=" shadow-lg p-6 w-[50%]"
-                    >
-                        <div className="ewewfdwwdwedw">
-                            <img
-                            src={image.logo}
-                            alt={`Image ${index + 1}`}
-                        />
-                        <div>
-                            <h1>{image.name}</h1>
-                           </div>
-                        <div className="flex ">
-                             <h1>{image.sub}</h1>
-                            <h1>{image.price}</h1>
-                            
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex ">
-                            <h1>{image.changePercent}</h1>
-                            <h1>{image.changeValue}</h1>
-                        </div>
-                        </div>
-                    </div>
-                ))}
+                    );
+                })}
             </Slider>
         </div>
     );
