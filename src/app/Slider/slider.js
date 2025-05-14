@@ -17,7 +17,21 @@ export default function SimpleSlider() {
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     };
 
     if (!isClient) return null;
@@ -45,7 +59,7 @@ export default function SimpleSlider() {
     return (
         <>
             <div className="adadsa">
-                <div className="w-full bg-cover bg-center p-10" style={{ backgroundImage: "url('/IMAGES/bgg.jpg')" }}>
+                <div className="w-full bg-cover bg-center lg:p-10 p-4" style={{ backgroundImage: "url('/IMAGES/bgg.jpg')" }}>
                     <div className=' top-0'>
                         <Slider {...settings}>
                             {images.map((image, index) => (
