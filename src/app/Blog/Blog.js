@@ -24,7 +24,7 @@ const Blog = () => {
     ];
 
     return (
-        <section className="max-w-7xl mx-auto px-4 pt-0 pb-0">
+        <section className="mx-auto px-4 pt-0 pb-0">
             <div className="p-6 relative">
                 <div className="flex justify-between items-start mb-6">
                     <h2 className="text-2xl font-bold text-gray-800">Our Latest Blog Posts</h2>
