@@ -1,6 +1,6 @@
 export default function FounderCard() {
     return (
-        <div className="bg-white lg:mt-12 mt-10 lg:mx-10 mx-4 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 relative overflow-hidden"
+        <div className="bg-white lg:mt-12 mt-10 lg:mx-12 mx-4 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 relative overflow-hidden"
             style={{
                 backgroundImage: 'url("/Images/bgg1.png")',
                 backgroundPosition: 'center',
@@ -12,9 +12,9 @@ export default function FounderCard() {
             <div className="bgImage"></div>
             <div className="z-10 cardWidth">
                 <img
-                    src="/Images/man.png"
+                    src="/Images/manCard.png"
                     alt="Ramon Talwwar"
-                    className="rounded-xl w-48 md:w-56 transform rotate-2"
+                    className="rounded-xl w-48 md:w-56 transform"
                 />
             </div>
 

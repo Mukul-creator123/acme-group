@@ -21,7 +21,7 @@ const FinancialBanner = () => {
                     individuals and families, guiding them through the intricate landscape of
                     investments.
                 </p>
-                <div className="flex justify-center">
+                <div className="flex lg:justify-start justify-center">
                     <button className="bg-red-600 flex justify-center text-white px-6 py-2 rounded-full hover:bg-red-700 transition">
                     Download Profile
                 </button>

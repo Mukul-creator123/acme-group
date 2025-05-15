@@ -83,7 +83,7 @@ export default function SimpleSlider() {
     ];
 
     return (
-        <div className="  lg:mt-12 mt-10 px-4 lg-px-0">
+        <div className="lg:mt-12 mt-10 px-4 lg:px-10">
             <Slider {...settings}>
                 {images.map((image, index) => {
                     const isPositive = image.changeValue.startsWith("+");

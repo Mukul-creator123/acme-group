@@ -48,7 +48,7 @@ export default function AcmeGroup() {
                 <p className='mt-2'>The ACME Group is a vibrant and dynamic organization </p> <p>with a mission to be a valued service provider and our customers’ first choice.</p>
             </div>
 
-            <div className="mx-auto flex lg:flex-row flex-col gap-6 lg:px-12 px-4 py-10">
+            <div className="mx-auto flex lg:flex-row flex-col gap-6 mt-6 lg:px-12 px-4 px-10">
                 <div className="flex flex-col gap-4 cardWidth">
                     {companies.map((company, index) => (
                         <button
