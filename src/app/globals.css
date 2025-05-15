@@ -22,7 +22,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Asap', sans-serif !important;
 }
 
 .custom-dialog>.p-dialog-mask {
@@ -62,19 +62,17 @@ body {
   transform: translate(-0%, -50%);
 }
 
-.blogImage {
+/* .blogImage {
   border: 1px solid #ddd;
-}
+} */
 
-.blogImage {
+/* .blogImage {
   background-image: url('/Images/bgg1.png');
-}
+} */
 
 .cardWidth {
   width: 33.3%;
 }
-
-
 
 .menuBar {
   display: flex;
@@ -92,9 +90,44 @@ body {
   width: 35vw;
 }
 
+.InvestorTextSize {
+  font-size: 55px;
+}
+
+.fontSize {
+  font-size: 50px;
+}
+
+.footerHeading {
+  font-size: 20px;
+}
+
+/* .acmeGroupCard:nth-child(1) {
+  margin-top: 20px;
+}
+
+.acmeGroupCard:nth-child(2) {
+  margin-top: 20px;
+} */
+
+.sectionTitle {
+  font-size: 18px;
+}
+
+.blogpostText {
+  font-size: 16px;
+}
+
+.contentWrapper h2 {
+  font-size: 55px;
+}
 @media(max-width: 767px) {
   .menuBar {
     display: none;
+  }
+
+  .textSize {
+    font-size: 13px;
   }
 
   .custom-dialog {
