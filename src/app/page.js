@@ -1,7 +1,6 @@
 import AcmeGroup from "./AcmeGroup/Acme";
 import AcmeVisionSection from "./AcmeVision/Acmevision";
 import Blog from "./Blog/Blog";
-import Slider from "./CardSlider/Slider";
 import FinancialBanner from "./Financial/FinancialBanner";
 import Footer from "./Footer/footer";
 import FounderCard from "./FounderCard/FounderCard";
