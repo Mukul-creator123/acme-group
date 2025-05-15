@@ -186,7 +186,7 @@ export default function Header() {
                 <div className="bannerImageMob block lg:hidden w-full">
                     <img src="/Images/mobImage.png" alt="banner" className="w-full" />
                 </div>
-                <div className="contentWrapper absolute top-1/2 left-[20px] md:left-[80px] -translate-y-1/2 max-w-md text-white">
+                <div className="contentWrapper absolute top-1/2 left-[20px] md:left-[80px] -translate-y-1/2 max-w-md lg:text-white">
                     <h2 className="text-3xl md:text-4xl font-semibold leading-tight">Achieve</h2>
                     <h2 className="text-3xl md:text-4xl font-semibold leading-tight">Financial Goal</h2>
                     <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
