@@ -93,10 +93,22 @@ export default function Header() {
                             </li>
                         ))}
                     </ul>
-                    <div onClick={() => setVisible(true)}>
-                        <button className='bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-full flex items-center btnHover'><FaUser className='text-sm' />Login</button>
-                    </div>
                 </nav>
+
+                 <div className="flex gap-6 items-center">
+                        <button className="text-gray-600">
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+                            </svg>
+                        </button>
+                        <div onClick={() => setVisible(true)}>
+                            <button className='bg-red-600 px-6 hover:bg-red-700 text-white font-medium py-3 rounded-full flex items-center btnHover'>
+                                <FaUser className='text-md' />
+                                <span className='mx-2'>Login</span>    
+                            </button>
+                        </div>
+                    </div>
+                    
             </header>
 
             {mobileMenuOpen && (
@@ -186,10 +198,10 @@ export default function Header() {
                 <div className="bannerImageMob block lg:hidden w-full">
                     <img src="/Images/mobImage.png" alt="banner" className="w-full" />
                 </div>
-                <div className="contentWrapper absolute top-1/2 left-[20px] md:left-[80px] -translate-y-1/2 max-w-md lg:text-white">
-                    <h2 className="text-3xl md:text-4xl font-semibold leading-tight">Achieve</h2>
-                    <h2 className="text-3xl md:text-4xl font-semibold leading-tight">Financial Goal</h2>
-                    <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
+                <div className="contentWrapper absolute top-1/2 left-[20px] md:left-[80px] -translate-y-1/2 max-w-md lg:text-black">
+                    <h2 className="md:text-4xl font-semibold leading-tight">Achieve</h2>
+                    <h2 className="md:text-4xl font-semibold leading-tight">Financial Goal</h2>
+                    <h2 className="md:text-4xl font-semibold leading-tight">
                         is <span className="text-yellow-500 font-bold">Efficiently</span>
                     </h2>
                     <p className="mt-4 text-gray-700 hidden md:block">

@@ -10,21 +10,20 @@ const AcmeVisionSection = () => {
 
     return (
         <section className="bg-gray-50 py-12 lg:mt-12 mt-10 px-4 lg:px-12">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-                <div>
+            <div className="flex m">
+                <div style={{width: "60%", marginRight: "100px"}}>
                     <p className="text-gray-500 text-sm mb-2">
                         "Whatever you are, strive to be excellent."
                     </p>
                     <h2 className="text-4xl md:text-5xl font-bold leading-tight">
                         <span className="text-orange-400">ACME</span> GROUP <br /> VISION
                     </h2>
-                    <p className="text-gray-600 mt-4 max-w-md">
+                    <p className="text-gray-600 mt-4 text-lg">
                         Our vision is to become the most sought-after and trusted provider of financial solutions in the industry, enhancing our rating and solidifying our position as India’s foremost service provider.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-2 gap-6" style={{width: "40%"}}>
                     {stats.map((stat, index) => (
                         <div
                             key={index}
