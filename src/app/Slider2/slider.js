@@ -29,7 +29,7 @@ export default function SimpleSlider() {
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow:1,
                 }
             }
         ]
@@ -83,7 +83,7 @@ export default function SimpleSlider() {
     ];
 
     return (
-        <div className="mt-12">
+        <div className="  lg:mt-12 mt-10 px-4 lg-px-0">
             <Slider {...settings}>
                 {images.map((image, index) => {
                     const isPositive = image.changeValue.startsWith("+");
