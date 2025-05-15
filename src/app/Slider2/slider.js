@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import { FaArrowUp, FaArrowDown} from "react-icons/fa";
+import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
 export default function SimpleSlider() {
     const [client, setClient] = useState(false);
@@ -16,10 +16,13 @@ export default function SimpleSlider() {
         autoplay: true,
         arrows: false,
         infinite: true,
-        speed: 500,
+        speed: 2500,       // slow speed for smooth scroll
+        autoplaySpeed: 0,        // no delay between scrolls
+        cssEase: 'linear',       // continuous linear motion
         slidesToShow: 5,
         slidesToScroll: 1,
-         responsive: [
+        pauseOnHover: false,
+        responsive: [
             {
                 breakpoint: 991,
                 settings: {
@@ -29,7 +32,7 @@ export default function SimpleSlider() {
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow:1,
+                    slidesToShow: 1,
                 }
             }
         ]
@@ -83,7 +86,7 @@ export default function SimpleSlider() {
     ];
 
     return (
-        <div className="lg:mt-12 mt-10 px-4 lg:px-10">
+        <div className="lg:mt-12 mt-10 w-[100%] ">
             <Slider {...settings}>
                 {images.map((image, index) => {
                     const isPositive = image.changeValue.startsWith("+");
@@ -92,23 +95,23 @@ export default function SimpleSlider() {
                         parseFloat(image.changeValue) >= 0;
                     return (
                         <div key={index} className="p-2">
-                            <div className="bg-white shadow-md border border-gray-300 rounded-xl p-4 space-y-2">
+                            <div className="bg-white shadow-md border border-gray-300 rounded-xl  p-4 space-y-2">
                                 <div className="">
                                     <img src={image.logo} alt={`Logo ${index + 1}`} className="h-8 w-auto object-contain" />
                                 </div >
-                                <h1 className="lg:text-md text-sm font-bold mb-0">{image.name}</h1>
+                                <h1 className="lg:text-md text-sm font-bold mb-0  text-[20px] tracking-[1px]">{image.name}</h1>
                                 <div className="flex justify-between">
-                                    <h2 className=" lg:text-md text-sm font-bold">{image.sub}</h2>
-                                    <h3 className=" lg:font-bold text-sm">{image.price}</h3>
+                                    <h2 className=" lg:text-md text-sm font-bold text-[20px]  ">{image.sub}</h2>
+                                    <h3 className=" lg:font-bold text-sm text-[20px] ">{image.price}</h3>
                                 </div>
                                 <div className={`text-sm font-medium ${isPositive ? 'text-green-600' : 'text-red-500'}`}>
                                     <div className="flex justify-between items-center">
-                                      <div className="flex gap-2 items-center">
-                                          <div>
-                                           { isBothPositive ? <FaArrowUp /> :<FaArrowDown />}
+                                        <div className="flex gap-2 items-center">
+                                            <div>
+                                                {isBothPositive ? <FaArrowUp /> : <FaArrowDown />}
+                                            </div>
+                                            <div className="lg:text-md text-sm text-[22px] "> {image.changePercent}</div>
                                         </div>
-                                        <div className="lg:text-md text-sm"> {image.changePercent}</div>
-                                      </div>
                                         <div>{image.changeValue}</div>
                                     </div>
                                 </div>
