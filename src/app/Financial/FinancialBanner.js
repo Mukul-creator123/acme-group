@@ -1,6 +1,6 @@
 const FinancialBanner = () => {
     return (
-        <section className="flex flex-col-reverse  lg:flex-row items-center justify-between lg:px-12 px-4 lg:mt-12 bg-white rounded-lg">
+        <section className="flex flex-col-reverse  lg:flex-row items-center justify-between lg:px-12 px-4 lg:mt-12 mt-10 bg-white rounded-lg">
             <div className="lg:w-1/2 space-y-6">
                 <div>
                     <p className="text-gray-500 lg:text-left text-center">Navigating Your Financial Journey With</p>
@@ -21,9 +21,11 @@ const FinancialBanner = () => {
                     individuals and families, guiding them through the intricate landscape of
                     investments.
                 </p>
-                <button className="bg-red-600 flex justify-center text-white px-6 py-2 rounded-full hover:bg-red-700 transition">
+                <div className="flex justify-center">
+                    <button className="bg-red-600 flex justify-center text-white px-6 py-2 rounded-full hover:bg-red-700 transition">
                     Download Profile
                 </button>
+                    </div>
             </div>
 
             <div className="relative">

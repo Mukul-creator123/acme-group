@@ -24,11 +24,11 @@ const Blog = () => {
     ];
 
     return (
-        <section className="mx-auto mt-12 px-4 pt-0 pb-0">
-            <div className="p-6 relative">
-                <div className="flex justify-between items-start mb-6">
+        <section className="mx-auto lg:mt-12 mt-10 px-4 pt-0 pb-0">
+            <div className="lg:p-6 p-0 relative">
+                <div className="flex  lg:justify-between flex-col  gap-[20px] tems-start mb-6">
                     <h2 className="text-2xl font-bold text-gray-800">Our Latest Blog Posts</h2>
-                    <button className="bg-red-500 text-white px-5 py-2 rounded-full text-sm">
+                    <button className="bg-red-500 text-white px-5 py-2 rounded-full text-sm" style={{ width:"50%"}}>       
                         See All Blog Posts
                     </button>
                 </div>
@@ -52,7 +52,7 @@ const Blog = () => {
                         ))}
                     </div>
 
-                    <div className="flex flex-col space-y-6 pl-6">
+                    <div className="flex flex-col space-y-6 lg:pl-6 pl-0">
                         {[
                             "Partially on or continuing in particular principles",
                             "Do believing oh disposing to supported allowance we.",

@@ -39,7 +39,7 @@ export default function AcmeGroup() {
     const activeCompany = companies[activeIndex];
 
     return (
-        <div className='mt-12'>
+        <div className='lg:mt-12 mt-10'>
             <div className='sectionTitle text-center'>
                 <h2 className='flex justify-center lg:flex-row flex-col gap-2 text-[28px] font-bold'>
                     <span className='text-orange-400'>ACME</span> GROUP OF COMPANIES

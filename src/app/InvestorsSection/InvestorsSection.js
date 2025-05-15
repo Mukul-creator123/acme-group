@@ -2,7 +2,7 @@ import React from "react";
 
 const InvestorsSection = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-between bg-white lg:px-12 px-4 mt-12 rounded-2xl overflow-hidden gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between bg-white lg:px-12 px-4 mt-10 rounded-2xl overflow-hidden gap-6">
             <div className="flex-1">
                 <p className="text-sm text-gray-400 uppercase tracking-wider mb-2">We're here to help</p>
                 <h2 className="text-4xl font-bold text-gray-900 forDes leading-tight">
