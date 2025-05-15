@@ -1,6 +1,6 @@
 const FinancialBanner = () => {
     return (
-        <section className="flex flex-col-reverse lg:flex-row items-center justify-between lg:px-12 px-4 lg:mt-0 mt-12 bg-white rounded-lg">
+        <section className="flex flex-col-reverse  lg:flex-row items-center justify-between lg:px-12 px-4 lg:mt-12 bg-white rounded-lg">
             <div className="lg:w-1/2 space-y-6">
                 <div>
                     <p className="text-gray-500 lg:text-left text-center">Navigating Your Financial Journey With</p>
