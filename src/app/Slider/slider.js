@@ -15,9 +15,12 @@ export default function SimpleSlider() {
         autoplay: true,
         arrows: false,
         infinite: true,
-        speed: 500,
+        speed: 2500,       // slow speed for smooth scroll
+        autoplaySpeed: 0,        // no delay between scrolls
+        cssEase: 'linear',       // continuous linear motion
         slidesToShow: 5,
         slidesToScroll: 1,
+        pauseOnHover: false,    
         responsive: [
             {
                 breakpoint: 991,
@@ -59,7 +62,7 @@ export default function SimpleSlider() {
     return (
         <>
             <div >
-                <div className="w-full bg-cover lg:px-10 bg-center lg:mt-12 mt-10 lg:p-6 p-2 lg:pt-8 pt-6 lg:pb-6 pb-4" style={{ backgroundImage: "url('/IMAGES/bgg.jpg')" }}>
+                <div className=" bg-cover lg:mt-12 mt-10 px-0 py-[60px] " style={{ backgroundImage: "url('/IMAGES/bgg.jpg')" }}>
                     <div className=' top-0'>
                         <Slider {...settings}>
                             {images.map((image, index) => (
@@ -67,7 +70,7 @@ export default function SimpleSlider() {
                                     <img
                                         src={image.logo}
                                         alt={`Image ${index + 1}`}
-                                        className="object-contain h-full w-[243px] rounded-md"
+                                        className="object-contain h-full w-[100%] rounded-xl"
                                     />
                                 </div>
                             ))}

@@ -31,7 +31,7 @@ const Blog = () => {
                     <button className="lg:w-fit w-1/2 bg-red-500 text-white px-5 py-2 rounded-full text-sm">
                         See All Blog Posts
                     </button>
-                </div>
+                </div>   
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
