@@ -28,7 +28,7 @@ const Blog = () => {
             <div className="lg:px-6 p-0 relative">
                 <div className="flex lg:justify-between flex-col lg:flex-row gap-[20px] tems-start mb-6">
                     <h2 className="text-4xl font-bold text-gray-800">Our Latest Blog Posts</h2>
-                    <button className="lg:w-fit w-1/2 bg-red-500 text-white px-5 py-2 rounded-full text-sm">
+                    <button className="lg:w-fit w-1/2 bg-red-500 text-white px-8 py-3 rounded-full text-md">
                         See All Blog Posts
                     </button>
                 </div>   

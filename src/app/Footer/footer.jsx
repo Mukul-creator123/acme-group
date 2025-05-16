@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaXTwitter } from 'react-icons/fa6';
+import { IoCall } from "react-icons/io5";
 
 const Footer = () => {
     return (
@@ -11,15 +11,18 @@ const Footer = () => {
                     <p className="mt-2 font-semibold footerHeading">For Updates</p>
                     <p className="text-sm">Follow us on Instagram</p>
                     <div className='flex lg:justify-start justify-center gap-6 mt-2'>
-                        <div className="rounded-full bg-[#fff] p-2 hover:bg-[#3d566e] transition">
-                            <FaFacebookF className="text-black text-sm" />
+                        <div className="rounded-full bg-[#fff] p-2 w-[35px] h-[35px] hover:bg-[#3d566e] transition">
+                            <img src="/Images/facebook.png" className="w-full h-full object-contain" />
                         </div>
-                        <div className="rounded-full bg-[#fff] p-2 hover:bg-[#3d566e] transition">
-                            <FaInstagram className="text-black text-sm" />
+
+                        <div className="rounded-full bg-[#fff] p-2 w-[35px] h-[35px] hover:bg-[#3d566e] transition">
+                            <img src="/Images/prime_twitter.png" className="w-full h-full object-contain" />
                         </div>
-                        <div className="rounded-full bg-[#fff] p-2 hover:bg-[#3d566e] transition">
-                            <FaXTwitter className="text-black text-sm" />
+
+                        <div className="rounded-full bg-[#fff] p-2 w-[35px] h-[35px] hover:bg-[#3d566e] transition">
+                            <img src="/Images/instagram.png" className="w-full h-full object-contain" />
                         </div>
+
                     </div>
                 </div>
 
@@ -52,10 +55,10 @@ const Footer = () => {
                 <div>
                     <h4 className="font-semibold mb-2 footerHeading">Call Us</h4>
                     <p className="flex items-center text-sm gap-2 lg:justify-start justify-center">
-                        📞 +91-9077 7666 00
+                        <span><IoCall /></span> +91-9077 7666 00
                     </p>
                     <p className="flex items-center text-sm gap-2 mt-1 lg:justify-start justify-center">
-                        📞 +91-9077 7555 00
+                        <span><IoCall /></span> +91-9077 7555 00
                     </p>
                 </div>
             </div>

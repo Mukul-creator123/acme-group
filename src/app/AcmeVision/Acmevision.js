@@ -18,25 +18,25 @@ const AcmeVisionSection = () => {
 
                 <div className='flex lg:w-1/2 gap-8'>
                     <div className="flex flex-wrap flex-col justify-between lg:w-1/2 mt-8 gap-8">
-                        <div className="bg-white rounded-xl shadow-lg py-16 flex flex-col pl-6">
-                            <h3 className="text-4xl font-bold text-gray-900">11+</h3>
+                        <div className="bg-white rounded-xl shadow-lg py-20 flex flex-col pl-6">
+                            <h3 className="text-5xl font-bold text-gray-900">11+</h3>
                             <p className="text-md text-black-600 mt-2">Years in Business</p>
                         </div>
 
-                        <div className="bg-white rounded-xl shadow-lg py-16 flex flex-col pl-6">
-                            <h3 className="text-4xl font-bold text-gray-900">50+</h3>
-                            <p className="text-md text-black-600 mt-2">Team Members</p>
+                        <div className="bg-white rounded-xl shadow-lg py-20 flex flex-col pl-6">
+                            <h3 className="text-5xl font-bold text-gray-900">50+</h3>
+                            <p className="text-lg text-black-600 mt-2">Team Members</p>
                         </div>
                     </div>
 
                     <div className="flex flex-wrap flex-col gap-8 lg:w-1/2">
-                        <div className="bg-white rounded-xl shadow-lg py-16 flex flex-col pl-6">
-                            <h3 className="text-4xl font-bold text-gray-900">35,000+</h3>
-                            <p className="text-md text-black-600 mt-2">Satisfied Investors</p>
+                        <div className="bg-white rounded-xl shadow-lg py-20 flex flex-col pl-6">
+                            <h3 className="text-5xl font-bold text-gray-900">35,000+</h3>
+                            <p className="text-lg text-black-600 mt-2">Satisfied Investors</p>
                         </div>
-                        <div className="bg-white rounded-xl shadow-lg py-16 flex flex-col pl-6">
-                            <h3 className="text-4xl font-bold text-gray-900">175+</h3>
-                            <p className="text-md text-black-600 mt-2">Awards Won</p>
+                        <div className="bg-white rounded-xl shadow-lg py-20 flex flex-col pl-6">
+                            <h3 className="text-5xl font-bold text-gray-900">175+</h3>
+                            <p className="text-lg text-black-600 mt-2">Awards Won</p>
                         </div>
                     </div>
                 </div>

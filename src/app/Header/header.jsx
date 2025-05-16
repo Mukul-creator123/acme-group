@@ -80,7 +80,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <header className="w-full menuBar sticky top-0 bg-white shadow z-50 lg:flex justify-between items-center p-6 lg:px-16 hidden">
+            <header className="w-full menuBar sticky top-0 bg-white z-50 lg:flex justify-between items-center p-6 lg:px-16 hidden">
                 <div className="flex items-center gap-4" style={{ width: "180px" }}>
                     <img src="/Images/logo.png" alt="Logo" className='w-full' />
                 </div>
@@ -95,20 +95,20 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                 <div className="flex gap-6 items-center">
-                        <button className="text-gray-600">
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
-                            </svg>
+                <div className="flex gap-6 items-center">
+                    <button className="text-gray-600">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+                        </svg>
+                    </button>
+                    <div onClick={() => setVisible(true)}>
+                        <button className='bg-red-600 px-6 hover:bg-red-700 text-white font-medium py-3 rounded-full flex items-center btnHover'>
+                            <FaUser className='text-md' />
+                            <span className='mx-2'>Login</span>
                         </button>
-                        <div onClick={() => setVisible(true)}>
-                            <button className='bg-red-600 px-10 hover:bg-red-700 text-white font-medium py-3 rounded-full flex items-center btnHover'>
-                                <FaUser className='text-md' />
-                                <span className='mx-2'>Login</span>    
-                            </button>
-                        </div>
                     </div>
-                    
+                </div>
+
             </header>
 
             {mobileMenuOpen && (
@@ -199,20 +199,20 @@ export default function Header() {
                 <div className="bannerImageMob block lg:hidden w-full">
                     <img src="/Images/mobImage.png" alt="banner" className="w-full" />
                 </div>
-                <div className="contentWrapper absolute top-1/2 left-[20px] md:left-[80px] -translate-y-1/2 max-w-md lg:text-black">
+                <div className="contentWrapper absolute top-[40%] left-[20px] md:left-[80px] -translate-y-1/2 max-w-md lg:text-black">
                     <h2 className="md:text-4xl font-sm leading-tight">Achieve</h2>
                     <h2 className="md:text-4xl font-sm leading-tight">Financial Goal</h2>
                     <h2 className="md:text-4xl font-sm leading-tight">
                         is <span className="text-yellow-500 font-bold">Efficiently</span>
                     </h2>
                     <p className="mt-4 text-gray-700 hidden md:block">
-                        Lorem ipsum is placeholder text commonly used in the graphic.
+                        Lorem ipsum is placeholder text commonly used in the <br></br> graphic.
                     </p>
                     <div className="mt-6 flex gap-4">
-                        <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-4 px-10 rounded-full">
+                        <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-10 rounded-full">
                             Let's talk with us
                         </button>
-                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-4 px-10 rounded-full">
+                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-3 px-10 rounded-full">
                             Get Started
                         </button>
                     </div>
