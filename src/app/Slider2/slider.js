@@ -38,8 +38,6 @@ export default function SimpleSlider() {
         ]
     };
 
-
-
     if (!client) return null;
 
     const images = [
