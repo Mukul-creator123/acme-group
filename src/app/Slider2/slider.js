@@ -99,9 +99,9 @@ export default function SimpleSlider() {
                                 <div className="">
                                     <img src={image.logo} alt={`Logo ${index + 1}`} className="h-8 w-auto object-contain" />
                                 </div >
-                                <h1 className="lg:text-md text-sm font-bold mb-0  text-[20px] tracking-[1px]">{image.name}</h1>
+                                <h1 className="lg:text-md text-sm font-bold mb-0 text-[18px] tracking-[1px]">{image.name}</h1>
                                 <div className="flex justify-between">
-                                    <h2 className=" lg:text-md text-sm font-bold text-[20px]  ">{image.sub}</h2>
+                                    <h2 className=" lg:text-md text-sm font-bold text-[18px]  ">{image.sub}</h2>
                                     <h3 className=" lg:font-bold text-sm text-[20px] ">{image.price}</h3>
                                 </div>
                                 <div className={`text-sm font-medium ${isPositive ? 'text-green-600' : 'text-red-500'}`}>
@@ -110,7 +110,7 @@ export default function SimpleSlider() {
                                             <div>
                                                 {isBothPositive ? <FaArrowUp /> : <FaArrowDown />}
                                             </div>
-                                            <div className="lg:text-md text-sm text-[22px] "> {image.changePercent}</div>
+                                            <div className="lg:text-md text-sm text-[20px] "> {image.changePercent}</div>
                                         </div>
                                         <div>{image.changeValue}</div>
                                     </div>
