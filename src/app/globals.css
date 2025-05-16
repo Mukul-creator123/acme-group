@@ -72,6 +72,7 @@ body {
 
 .cardWidth {
   width: 33.3%;
+  max-height: 500px;
 }
 
 .menuBar {
@@ -91,7 +92,7 @@ body {
 }
 
 .InvestorTextSize {
-  font-size: 55px;
+  font-size: 60px;
 }
 
 .fontSize {

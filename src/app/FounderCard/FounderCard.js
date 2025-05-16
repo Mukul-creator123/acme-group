@@ -1,6 +1,6 @@
 export default function FounderCard() {
     return (
-        <div className="bg-white lg:mt-12 mt-10 lg:mx-12 mx-4 rounded-2xl flex flex-col md:flex-row items-center relative overflow-hidden"
+        <div className="bg-white border-l border-gray-300  lg:mt-12 mt-10 lg:mx-12 mx-4 rounded-2xl flex flex-col md:flex-row items-center relative overflow-hidden    "
             style={{
                 backgroundImage: 'url("/Images/bgg1.png")',
                 backgroundPosition: 'center',
@@ -12,18 +12,18 @@ export default function FounderCard() {
             <div className="bgImage"></div>
             <div className="z-10 cardWidth">
                 <img
-                    src="/Images/manCard.png"
+                    src="/Images/fcg2.png"
                     alt="Ramon Talwwar"
-                    className="rounded-xl lg:w-48 w-100 md:w-56 transform"
+                    className="rounded-xl h-full transform"
                 />
             </div>
 
-            <div className="z-10 flex-1 cardWidth px-6">
+            <div className="z-10 flex-1 cardWidth pl-30">
                 <p className="text-sm text-gray-500 text-center lg:text-start">
                     Meet Founder of <span className="text-orange-500 font-semibold">ACME</span> Group
                 </p>
-                <h2 className="text-2xl font-bold text-gray-800 mt-1 text-center lg:text-start">Ramon Talwwar</h2>
-                <p className="text-lg font-medium text-gray-700 mt-2 text-center lg:text-start">
+                <h2 className="text-4xl font-bold text-gray-800 mt-1 text-center lg:text-start">Ramon Talwwar</h2>
+                <p className="text-2xl font-medium text-gray-700 mt-2 text-center lg:text-start">
                     Not all dreamers are winners, but all winners are dreamers.
                 </p>
                 <p className="text-sm text-gray-600 mt-2 text-center lg:text-start">
