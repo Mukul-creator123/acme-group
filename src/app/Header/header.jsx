@@ -130,18 +130,19 @@ export default function Header() {
                                 <label htmlFor="email" className="block mb-1 text-sm font-medium text-gray-700">
                                     Email<span className='text-red-600 text-lg'>*</span>
                                 </label>
-                                <input type="email" name="email" placeholder='Enter email' className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" value={formData.email} onChange={handleChange} required />
+                                <input type="email" name="email" placeholder='Enter email' className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
                             </div>
+
                             <div className='mt-4'>
                                 <label htmlFor="password" className="block mb-1 text-sm font-medium text-gray-700">
                                     Password<span className='text-red-600 text-lg'>*</span>
                                 </label>
                                 <div className='relative'>
-                                    <input type={showPassword ? "text" : "password"} placeholder='Enter password' name="password" className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" value={formData.password} onChange={handleChange} required />
+                                    <input type={showPassword ? "text" : "password"} placeholder='Enter password' name="password" className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
                                     <span className='absolute -translate-y-1/2 btnHover' onClick={passwordToggle} style={{ top: "50%", right: "10px" }}>{showPassword ? <FaEye /> : <IoMdEyeOff />}</span>
                                 </div>
                             </div>
-                            <button className="bg-red-600 btnHover hover:bg-red-700 w-full mt-6 text-white font-medium py-3 px-4 rounded-full">
+                            <button className="bg-red-600 btnHover hover:bg-red-700 w-full mt-6 text-white font-bold py-3 px-4 rounded-full">
                                 Sign In
                             </button>
                             <p className="mt-4 text-sm text-center text-gray-600 flex justify-center gap-1">
@@ -179,7 +180,7 @@ export default function Header() {
                                     <span className='absolute -translate-y-1/2 btnHover' onClick={passwordToggle} style={{ top: "50%", right: "10px" }}>{showPassword ? <FaEye /> : <IoMdEyeOff />}</span>
                                 </div>
                             </div>
-                            <button className="bg-red-600 btnHover hover:bg-red-700 w-full mt-4 text-white font-medium py-3 px-4 rounded-full">
+                            <button className="bg-red-600 btnHover hover:bg-red-700 w-full mt-4 text-white font-bold py-3 px-4 rounded-full">
                                 Sign Up
                             </button>
                             <p className="mt-4 text-sm text-center text-gray-600 flex gap-1 justify-center">
