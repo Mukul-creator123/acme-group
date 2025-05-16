@@ -66,7 +66,7 @@ export default function SimpleSlider() {
                     <div className=' top-0'>
                         <Slider {...settings}>
                             {images.map((image, index) => (
-                                <div key={index} className=" justify-center px-2">
+                                <div key={index} className=" justify-center px-3">
                                     <img
                                         src={image.logo}
                                         alt={`Image ${index + 1}`}
