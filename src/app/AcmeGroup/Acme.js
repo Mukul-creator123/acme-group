@@ -33,6 +33,24 @@ const companies = [
         description: 'SSK services content goes here...',
         image: '/images/ssk.jpg',
     },
+    {
+        name: 'ACME Finvest',
+        logo: '/Images/icon3.png',
+        description: 'Finvest services content goes here...',
+        image: '/images/finvest.jpg',
+    },
+    {
+        name: 'ACME Bullion',
+        logo: '/Images/icon4.png',
+        description: 'Bullion services content goes here...',
+        image: '/images/bullion.jpg',
+    },
+    {
+        name: 'SSK',
+        logo: '/Images/icon5.png',
+        description: 'SSK services content goes here...',
+        image: '/images/ssk.jpg',
+    },
 ];
 
 export default function AcmeGroup() {
@@ -45,31 +63,50 @@ export default function AcmeGroup() {
                 <h2 className='flex justify-center lg:flex-row flex-col gap-2 text-[28px] font-bold'>
                     <span className='text-orange-400 fontSize'>ACME</span> <span className='fontSize'>GROUP OF COMPANIES</span>
                 </h2>
-                <p className='text-gray-500 sectionTitle'>Opportunities don't just happen you create them.</p>
+                <p className='text-gray-500 text-lg'>Opportunities don't just happen you create them.</p>
                 <p className='mt-2 sectionTitle'>The ACME Group is a vibrant and dynamic organization </p> <p>with a mission to be a valued service provider and our customers’ first choice.</p>
             </div>
 
-            <div className="mx-auto flex lg:flex-row flex-col gap-6 mt-6 lg:px-12 px-4">
-                <div className="flex flex-col gap-4 cardWidth">
-                    {companies.map((company, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setActiveIndex(index)}
-                            className={`font-semibold flex items-center gap-3 px-4 py-2 rounded-md border shadow-sm text-md font-medium ${activeIndex === index ? 'bg-black text-white' : 'bg-white text-gray-700'}`}>
-                            <img src={company.logo} alt={company.name} className={`${activeIndex === index ? 'bg-white rounded-full w-10 h-10 p-2 text-white' : 'bg-gray-100 p-2 rounded-full w-10 h-10 text-gray-700'}`} />
-                            {company.name}
-                        </button>
-                    ))}
-                </div>
-                <div className='cardWidth'>
-                    <div className='AcmeImage'>
-                        <img src="/Images/AcmeGroup.png" alt='Acame Group Logo' />
+            <div className="mx-auto flex lg:flex-row flex-col gap-6 mt-6 lg:px-12 px-4" style={{ height: "360px" }}>
+                <div className="flex flex-col gap-4 cardWidth overflow-y-scroll [direction:ltr]" style={{ width: "26%" }}>
+                    <div
+                        className="flex flex-col gap-4 cardWidth overflow-y-scroll scrollbar-hidden"
+                        style={{ width: "100%", direction: "rtl", height: "100%" }}
+                    >
+                        <div className='flex flex-col gap-4' style={{ direction: "ltr" }}>
+                            {companies.map((company, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setActiveIndex(index)}
+                                    className={`font-semibold flex items-center w-full px-4 py-2 rounded-md border shadow-sm text-md font-medium ${activeIndex === index ? 'bg-black text-white' : 'bg-white text-gray-700'
+                                        }`}
+                                >
+                                    <img
+                                        src={company.logo}
+                                        alt={company.name}
+                                        className={`${activeIndex === index
+                                                ? 'bg-white rounded-full w-10 h-10 p-2 text-white'
+                                                : 'bg-gray-100 p-2 rounded-full w-10 h-10 text-gray-700'
+                                            }`}
+                                    />
+                                    {company.name}
+                                </button>
+                            ))}
+                        </div>
                     </div>
+
                 </div>
-                <div className='cardWidth'>
-                    <p>
-                        ACME Wealth Pvt. Ltd. offers premier investment solutions in financial advisory, capital markets, wealth and portfolio management,and trading advisory services for equities and debt. Our experts tailor strategies to your goals with transparency and integrity. Secure your financial future today.
-                    </p>
+                <div className='flex gap-8' style={{ width: "74%" }}>
+                    <div className='cardWidth'>
+                        <div className='AcmeImage h-full'>
+                            <img src="/Images/AcmeGroup.png" alt='Acame Group Logo' />
+                        </div>
+                    </div>
+                    <div className='cardWidth'>
+                        <p>
+                            ACME Wealth Pvt. Ltd. offers premier investment solutions in financial advisory, capital markets, wealth and portfolio management,and trading advisory services for equities and debt. Our experts tailor strategies to your goals with transparency and integrity. Secure your financial future today.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

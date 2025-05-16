@@ -71,7 +71,7 @@ body {
 } */
 
 .cardWidth {
-  width: 33.3%;
+  width: 100%;
   max-height: 500px;
 }
 
@@ -112,7 +112,7 @@ body {
 } */
 
 .sectionTitle {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .blogpostText {
