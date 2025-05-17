@@ -75,8 +75,16 @@ body {
   max-height: 500px;
 }
 
+.cardWidths {
+  width: 33.3%;
+}
+
 .menuBar {
   display: flex;
+}
+
+.hover:hover {
+  cursor: pointer;
 }
 
 .bannerImageMob {

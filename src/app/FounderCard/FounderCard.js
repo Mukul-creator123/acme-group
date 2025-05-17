@@ -10,7 +10,7 @@ export default function FounderCard() {
             }}
         >
             <div className="bgImage"></div>
-            <div className="z-10 cardWidth">
+            <div className="z-10 cardWidths">
                 <img
                     src="/Images/fcg2.png"
                     alt="Ramon Talwwar"
@@ -18,7 +18,7 @@ export default function FounderCard() {
                 />
             </div>
 
-            <div className="z-10 flex-1 cardWidth pl-25">
+            <div className="z-10 flex-1 cardWidths pl-25">
                 <p className="text-sm text-gray-500 text-center lg:text-start">
                     Meet Founder of <span className="text-orange-500 font-semibold">ACME</span> Group
                 </p>
@@ -32,7 +32,7 @@ export default function FounderCard() {
                 </p>
             </div>
 
-            <div className="z-10 w-full font-bold md:w-64 mt-6 lg:pb-0 pb-6 md:mt-0 border-l border-gray-300 pl-8 cardWidth">
+            <div className="z-10 w-full font-bold md:w-64 mt-6 lg:pb-0 pb-6 md:mt-0 border-l border-gray-300 pl-8 cardWidths">
                 <h3 className="text-md font-semibold text-gray-800 mb-3 text-center lg:text-start">Recent Posts</h3>
                 <ul className="text-sm text-gray-600 space-y-2">
                     <li className="text-center mb-6 lg:text-start ">

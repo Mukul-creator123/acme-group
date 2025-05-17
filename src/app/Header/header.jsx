@@ -4,13 +4,15 @@ import { FaFacebookF, FaInstagram, FaXTwitter, FaEnvelope, FaPhone, FaUser } fro
 import { Dialog } from 'primereact/dialog';
 import { FaEye } from "react-icons/fa";
 import { IoMdEyeOff } from "react-icons/io";
+import { X, Search } from 'lucide-react';
 
 export default function Header() {
     const [visible, setVisible] = useState(false);
     const [formData, setformData] = useState({ email: '', password: '' });
     const [showPassword, setShowPassword] = useState(false);
-    const [authMode, setAuthMode] = useState("login");
+    const [authMode, setAuthMode] = useState("login", false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleChange = (e) => {
         setformData({ ...formData, [e.target.name]: e.target.value });
@@ -21,7 +23,7 @@ export default function Header() {
     const showLoginPage = () => setAuthMode("login");
 
     useEffect(() => {
-        if (mobileMenuOpen) {
+        if (visible || isOpen || mobileMenuOpen) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = '';
@@ -30,7 +32,7 @@ export default function Header() {
         return () => {
             document.body.style.overflow = '';
         };
-    }, [mobileMenuOpen]);
+    }, [visible, mobileMenuOpen, isOpen]);
 
     return (
         <section className="overflow-x-hidden">
@@ -70,7 +72,7 @@ export default function Header() {
                 <img src="/Images/logo.png" alt="Logo" className="h-8" />
                 <div className="flex gap-3 items-center">
                     <button className="text-gray-600">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 hover" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
                         </svg>
                     </button>
@@ -96,11 +98,31 @@ export default function Header() {
                 </nav>
 
                 <div className="flex gap-6 items-center">
-                    <button className="text-gray-600">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <button className="text-gray-600" onClick={() => setIsOpen(true)}>
+                        <svg className="w-5 h-5 hover" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
                         </svg>
                     </button>
+
+                    {isOpen && (
+                        <div className="fixed inset-0 bg-black/50 z-50 flex justify-center items-start pt-20">
+                            <div className="bg-white rounded-xl shadow-lg w-full max-w-2xl mx-4 p-4 relative">
+                                <button onClick={() => setIsOpen(false)} className="absolute top-1/2 right-4 text-gray-500 hover:text-gray-800 transform -translate-x-1/2 -translate-y-1/2">
+                                    <X size={20} className='hover'/>
+                                </button>
+
+                                <div className="flex items-center border border-gray-300 rounded-md px-4 py-2">
+                                    <Search className="text-gray-400 mr-2" />
+                                    <input
+                                        type="text"
+                                        placeholder="Search for products..."
+                                        className="flex-1 outline-none bg-transparent"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
                     <div onClick={() => setVisible(true)}>
                         <button className='bg-red-600 px-6 hover:bg-red-700 text-white font-medium py-3 rounded-full flex items-center btnHover'>
                             <FaUser className='text-md' />
