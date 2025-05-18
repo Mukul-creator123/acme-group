@@ -13,7 +13,7 @@ export default function SimpleSlider() {
 
     const settings = {
         dots: false,
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         infinite: true,
         speed: 2500,       // slow speed for smooth scroll
@@ -92,10 +92,10 @@ export default function SimpleSlider() {
                         parseFloat(image.changePercent) >= 0 &&
                         parseFloat(image.changeValue) >= 0;
                     return (
-                        <div key={index} className="p-2">
+                        <div key={index} className='p-2 '>
                             <div className="bg-white shadow-md border border-gray-300 rounded-xl  p-4 space-y-2">
-                                <div className="">
-                                    <img src={image.logo} alt={`Logo ${index + 1}`} className="h-8 w-auto object-contain" />
+                                <div>
+                                    <img src={image.logo} alt={`Logo ${index + 1}`} className="h-10 w-auto object-contain" />
                                 </div >
                                 <h1 className="lg:text-md text-sm font-bold mb-0 text-[18px] tracking-[1px]">{image.name}</h1>
                                 <div className="flex justify-between">
