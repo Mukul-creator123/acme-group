@@ -102,12 +102,12 @@ export default function AcmeGroup() {
                 </div>
                 
                 <div className='flex gap-8 lg:flex-row flex-col layoutWidth'>
-                    <div className='cardWidth'>
+                    <div className=' lg:w-1/2 w-full'>
                         <div className='AcmeImage h-full'>
                             <img src="/Images/AcmeGroup.png" alt='Acame Group Logo' />
                         </div>
                     </div>
-                    <div className='cardWidth'>
+                    <div className=' lg:w-1/2 w-full'>
                         <p>
                             ACME Wealth Pvt. Ltd. offers premier investment solutions in financial advisory, capital markets, wealth and portfolio management,and trading advisory services for equities and debt. Our experts tailor strategies to your goals with transparency and integrity. Secure your financial future today.
                         </p>
