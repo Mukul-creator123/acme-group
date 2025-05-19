@@ -83,7 +83,7 @@ export default function Header() {
             </div>
 
             <header className="w-full menuBar sticky top-0 bg-white z-50 lg:flex justify-between items-center p-6 lg:px-16 hidden">
-                <div className="flex items-center gap-4" style={{ width: "180px" }}>
+                <div className="flex items-center gap-4" style={{ width: "210px" }}>
                     <img src="/Images/logo.png" alt="Logo" className='w-full' />
                 </div>
 

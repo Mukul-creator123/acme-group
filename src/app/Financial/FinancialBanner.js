@@ -1,6 +1,6 @@
 const FinancialBanner = () => {
     return (
-        <section className="flex flex-col-reverse lg:flex-row items-center justify-between lg:gap-0 gap-8 lg:px-12 px-4 lg:mt-12 mt-10 bg-white rounded-lg">
+        <section className="flex flex-col-reverse lg:flex-row items-center justify-between lg:gap-0 gap-8 lg:px-12 px-4 lg:mt-12 mt-4 bg-white rounded-lg">
             <div className="lg:w-1/2 space-y-6">
                 <div>
                     <p className="text-gray-500 lg:text-left text-lg text-center">Navigating Your Financial Journey With</p>
@@ -22,7 +22,7 @@ const FinancialBanner = () => {
                     investments.
                 </p>
                 <div className="flex lg:justify-start justify-center">
-                    <button className="bg-red-600 flex justify-center text-white px-8 py-3 rounded-full hover:bg-red-700 transition">
+                    <button className="lg:mb-0 mb-12 bg-red-600 flex justify-center text-white px-8 py-3 rounded-full hover:bg-red-700 transition">
                     Download Profile
                 </button>
                     </div>

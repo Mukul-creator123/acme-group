@@ -27,8 +27,8 @@ const Blog = () => {
         <section className="mx-auto lg:mt-12 mt-10 px-4 lg:px-6 pt-0 pb-0">
             <div className="lg:px-6 p-0 relative">
                 <div className="flex lg:justify-between flex-col lg:flex-row gap-[20px] tems-start mb-6">
-                    <h2 className="text-4xl font-bold text-gray-800">Our Latest Blog Posts</h2>
-                    <button className="lg:w-fit w-1/2 bg-red-500 text-white px-8 py-3 rounded-full text-md">
+                    <h2 className="lg:text-4xl text-3xl text-center font-bold text-gray-800">Our Latest Blog Posts</h2>
+                    <button className="lg:w-fit w-1/2 blogButton bg-red-500 text-white px-8 py-3 rounded-full text-md">
                         See All Blog Posts
                     </button>
                 </div>   
