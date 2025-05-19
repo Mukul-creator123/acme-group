@@ -6,11 +6,11 @@ const AcmeVisionSection = () => {
             <div className="flex flex-col lg:flex-row items-start justify-between lg:gap-26 gap-6">
                 <div className="lg:w-1/2">
                     <p className="text-lg text-gray-500 mb-2">"Whatever you are, strive to be excellent."</p>
-                    <h2 className="text-4xl md:text-5xl font-bold leading-snug visionTitle">
+                    <h2 className="text-4xl md:text-5xl font-bold leading-snug lg:block hidden">
                         <span className="text-orange-400">ACME</span> GROUP <br /> VISION
                     </h2>
 
-                    <h2 className="lg:text-4xl text-center text-3xl font-bold leading-snug">
+                    <h2 className="lg:text-4xl text-center text-3xl lg:hidden block font-bold leading-snug">
                         <span className="text-orange-400">ACME</span> GROUP VISION
                     </h2>
 
