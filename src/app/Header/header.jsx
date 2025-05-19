@@ -59,6 +59,7 @@ export default function Header() {
 
                 <div className='flex lg:flex hidden gap-4 justify-end' style={{ width: "33.3%" }}>
                     <span className='flex gap-2 items-center text-white text-sm'><FaEnvelope className='text-yellow-500' />info@acmegroup.co.in</span>
+                     <div style={{borderLeft: "1px solid #ddd"}}></div>
                     <span className='flex gap-2 items-center text-white text-sm'><FaPhone className='text-yellow-500' />+91-9077755500</span>
                 </div>
             </div>
