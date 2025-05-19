@@ -18,7 +18,7 @@ export default function Home() {
       <FinancialBanner />
       <AcmeVisionSection />
       <AcmeGroup />
-      {/* <SimpleSlider />    */}
+      <SimpleSlider />   
       <Blog/>
       <Slider2/>   
       <Footer />

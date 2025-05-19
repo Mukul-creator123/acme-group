@@ -26,5 +26,12 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
+  },
+  
+  "files.exclude": {
+    "**/.next": true
   }
+
+
 }
+
