@@ -33,7 +33,7 @@ export default function FounderCard() {
                 </p>
             </div>
 
-            <div className="z-10 w-full font-bold md:w-64 mt-6 lg:pb-0 pb-6 md:mt-0 border-l border-gray-300 pl-8 cardWidths">
+            <div className="z-10 w-full font-bold md:w-64 mt-6 lg:pb-0 pb-6 md:mt-0 border-l border-gray-300 pl-8 cardWidth">
                 <h3 className="text-md font-semibold text-gray-800 mb-3 text-center lg:text-start">Recent Posts</h3>
                 <ul className="text-sm text-gray-600 space-y-2">
                     <li className="text-xs text-center mb-6 lg:text-start ">

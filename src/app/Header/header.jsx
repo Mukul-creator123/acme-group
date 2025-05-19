@@ -221,20 +221,25 @@ export default function Header() {
                 <div className="bannerImageMob block lg:hidden w-full">
                     <img src="/Images/mobImage.png" alt="banner" className="w-full" />
                 </div>
-                <div className="contentWrapper absolute top-[40%] left-[20px] md:left-[80px] -translate-y-1/2 max-w-md lg:text-black">
+                <div className="contentWrapper absolute top-[40%] left-[13px] lg:left-[60px] -translate-y-1/2 max-w-md lg:text-black">
                     <h2 className="md:text-4xl font-sm leading-tight">Achieve</h2>
                     <h2 className="md:text-4xl font-sm leading-tight">Financial Goal</h2>
                     <h2 className="md:text-4xl font-sm leading-tight">
                         is <span className="text-yellow-500 font-bold">Efficiently</span>
                     </h2>
+                 
+                  <p className="text-[10px] font-semibold text-gray-700 block lg:hidden">
+                        Lorem ipsum is placeholder text <br/> commonly used in the  graphic.
+                    </p>
+
                     <p className="mt-4 text-gray-700 hidden md:block">
                         Lorem ipsum is placeholder text commonly used in the <br></br> graphic.
                     </p>
-                    <div className="mt-6 flex gap-4">
-                        <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-10 rounded-full">
+                    <div className="mt-6 flex lg:gap-4  gap-1 btn-width">
+                        <button className="bg-red-600 hover:bg-red-700 text-white font-medium lg:py-3 py-2 lg:px-10 px-4 rounded-full">
                             Let's talk with us
                         </button>
-                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-3 px-10 rounded-full">
+                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium lg:py-3 py-2  lg:px-10 px-4 rounded-full">
                             Get Started
                         </button>
                     </div>

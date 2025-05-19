@@ -16,7 +16,7 @@ export default function SimpleSlider() {
         arrows: false,
         infinite: true,
         speed: 2500,       // slow speed for smooth scroll
-        autoplaySpeed: 0,        // no delay between scrolls
+       // autoplaySpeed: 0,        // no delay between scrolls
         cssEase: 'linear',       // continuous linear motion
         slidesToShow: 5,
         slidesToScroll: 1,

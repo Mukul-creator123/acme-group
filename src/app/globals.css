@@ -74,6 +74,9 @@ body {
   width: 100%;
   max-height: 500px;
 }
+.cardWidth{
+  width:31.3%;
+}
 
 .cardWidths {
   width: 33.3%;
@@ -138,6 +141,13 @@ body {
   .textSize {
     font-size: 13px;
   }
+
+  .contentWrapper h2 {
+    font-size: 32px;
+}
+.btn-width{
+  font-size:8px;
+}
 
   .custom-dialog {
     width: 100%;
