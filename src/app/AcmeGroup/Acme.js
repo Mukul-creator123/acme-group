@@ -60,15 +60,20 @@ export default function AcmeGroup() {
     return (
         <div className='lg:mt-12 mt-10'>
             <div className='sectionTitle text-center'>
-                <h2 className='flex justify-center lg:flex-row flex-col gap-2 text-[28px] font-bold'>
+                <h2 className='flex justify-center lg:flex-row flex-col gap-2 text-[28px] font-bold visionTitle'>
                     <span className='text-orange-400 fontSize'>ACME</span> <span className='fontSize'>GROUP OF COMPANIES</span>
                 </h2>
-                <p className='text-gray-500 text-lg'>Opportunities don't just happen you create them.</p>
-                <p className='mt-2 sectionTitle'>The ACME Group is a vibrant and dynamic organization </p> <p>with a mission to be a valued service provider and our customers’ first choice.</p>
+
+                <h2 className='text-[28px] font-bold'>
+                    <span className='text-orange-400 fontSize'>ACME</span> <span className='fontSize'>GROUP OF COMPANIES</span>
+                </h2>
+
+                <p className='text-gray-500 lg:text-lg text-md lg:px-0 px-12'>Opportunities don't just happen you create them.</p>
+                <p className='mt-2 sectionTitle lg:px-0 px-6'>The ACME Group is a vibrant and dynamic organization </p> <p className='lg:px-0 px-6'>with a mission to be a valued service provider and our customers’ first choice.</p>
             </div>
 
-            <div className="mx-auto flex lg:flex-row flex-col gap-6 mt-6 lg:px-12 px-4" style={{ height: "360px" }}>
-                <div className="flex flex-col gap-4 cardWidth overflow-y-scroll [direction:ltr]" style={{ width: "26%" }}>
+            <div className="mx-auto flex lg:flex-row flex-col-reverse gap-6 mt-6 lg:px-12 px-4 sliderWidth">
+                <div className="flex flex-col gap-4 cardWidth overflow-y-scroll [direction:ltr]">
                     <div
                         className="flex flex-col gap-4 cardWidth overflow-y-scroll scrollbar-hidden"
                         style={{ width: "100%", direction: "rtl", height: "100%" }}
@@ -85,8 +90,8 @@ export default function AcmeGroup() {
                                         src={company.logo}
                                         alt={company.name}
                                         className={`${activeIndex === index
-                                                ? 'bg-white rounded-full w-10 h-10 p-2 text-white'
-                                                : 'bg-gray-100 p-2 rounded-full w-10 h-10 text-gray-700'
+                                            ? 'bg-white rounded-full w-10 h-10 p-2 text-white'
+                                            : 'bg-gray-100 p-2 rounded-full w-10 h-10 text-gray-700'
                                             }`}
                                     />
                                     {company.name}
@@ -94,9 +99,9 @@ export default function AcmeGroup() {
                             ))}
                         </div>
                     </div>
-
                 </div>
-                <div className='flex gap-8' style={{ width: "74%" }}>
+                
+                <div className='flex gap-8 lg:flex-row flex-col layoutWidth'>
                     <div className='cardWidth'>
                         <div className='AcmeImage h-full'>
                             <img src="/Images/AcmeGroup.png" alt='Acame Group Logo' />

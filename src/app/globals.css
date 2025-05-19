@@ -22,7 +22,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
- font-family: "Asap";
+  font-family: "Asap";
 }
 
 .custom-dialog>.p-dialog-mask {
@@ -82,6 +82,10 @@ body {
   width: 33.3%;
 }
 
+.cardWidth {
+  width: 31.3%;
+}
+
 .menuBar {
   display: flex;
 }
@@ -133,9 +137,46 @@ body {
 .contentWrapper h2 {
   font-size: 55px;
 }
+
+.layoutWidth {
+  width: 76%;
+}
+
+.cardWidth {
+  width: 26%;
+}
+
 @media(max-width: 767px) {
-  .menuBar {
+
+  .menuBar,
+  .visionTitle,
+  .blogButton {
     display: none;
+  }
+
+  .footerHeading {
+    font-size: 16px;
+  }
+
+  .layoutWidth {
+    width: 100%;
+  }
+
+  .cardWidths {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .sliderWidth {
+    width: 100%;
+  }
+
+  .fontSize {
+    font-size: 30px;
+  }
+
+  .sectionTitle {
+    font-size: 16px;
   }
 
   .textSize {
@@ -164,6 +205,7 @@ body {
 
   .cardWidth {
     width: 100%;
+    max-height: unset;
   }
 
   .footerLogo {

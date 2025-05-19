@@ -17,7 +17,11 @@ export default function SimpleSlider() {
         arrows: false,
         infinite: true,
         speed: 2500,       // slow speed for smooth scroll
+<<<<<<< Updated upstream
                // no delay between scrolls
+=======
+        // autoplaySpeed: 0,        // no delay between scrolls
+>>>>>>> Stashed changes
         cssEase: 'linear',       // continuous linear motion
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -93,7 +97,7 @@ export default function SimpleSlider() {
                         parseFloat(image.changeValue) >= 0;
                     return (
                         <div key={index} className='p-2 '>
-                            <div className="bg-white shadow-md border border-gray-300 rounded-xl  p-4 space-y-2">
+                            <div className="bg-white shadow-md border border-gray-300 rounded-xl p-4 space-y-2 lg:mx-0 mx-8">
                                 <div>
                                     <img src={image.logo} alt={`Logo ${index + 1}`} className="h-10 w-auto object-contain" />
                                 </div >
