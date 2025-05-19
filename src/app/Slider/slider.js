@@ -62,7 +62,7 @@ export default function SimpleSlider() {
     return (
         <>
             <div >
-                <div className=" bg-cover lg:mt-12 mt-10 px-0 py-[60px] " style={{ backgroundImage: "url('/IMAGES/bgg.jpg')" }}>
+                <div className=" bg-cover lg:mt-12 mt-10 px-0 lg:py-[60px] py-[30px] " style={{ backgroundImage: "url('/IMAGES/bgg.jpg')" }}>
                     <div className=' top-0'>
                         <Slider {...settings}>
                             {images.map((image, index) => (
