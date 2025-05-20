@@ -22,7 +22,7 @@ const AcmeVisionSection = () => {
                 </div>
 
                 <div className='flex lg:w-1/2 w-full lg:gap-8 gap-4'>
-                    <div className="flex flex-wrap flex-col justify-between lg:w-1/2 w-full mt-8 gap-8">
+                    <div className="flex flex-wrap flex-col justify-between lg:w-1/2 w-full mt-8 lg:gap-8 gap-4">
                         <div className="bg-white rounded-xl shadow-lg lg:py-20 py-10 flex flex-col pl-6">
                             <h3 className="lg:text-5xl text-2xl font-bold text-gray-900">11+</h3>
                             <p className="lg:text-lg text-sm text-black-600 mt-2">Years in Business</p>
