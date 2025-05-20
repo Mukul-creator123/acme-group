@@ -218,12 +218,15 @@ body {
     display: none !important;
   }
 
+  .borderWidth {
+    width: 80% !important;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+  }
+
   .cardWidth {
     width: 100%;
     max-height: unset;
-    border-top: 1px solid #ddd;
-    padding-top: 15px;
-    width: 80%;
   }
 
   .footerLogo {
