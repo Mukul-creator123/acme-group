@@ -73,7 +73,7 @@ export default function AcmeGroup() {
             </div>
 
             <div className="mx-auto flex lg:flex-row flex-col-reverse gap-6 mt-6 lg:px-12 px-4 sliderWidth">
-                <div className="flex flex-col gap-4 cardWidth overflow-y-scroll [direction:ltr]">
+                <div className="flex flex-col gap-4 cardWidth [direction:ltr]">
                     <div
                         className="flex flex-col gap-4 cardWidth overflow-y-scroll scrollbar-hidden"
                         style={{ width: "100%", direction: "rtl", height: "100%" }}
