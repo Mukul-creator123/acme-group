@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState,useRef } from 'react';
 import { FaFacebookF, FaInstagram, FaXTwitter, FaEnvelope, FaPhone, FaUser } from 'react-icons/fa6';
 import { Dialog } from 'primereact/dialog';
 import { FaEye } from "react-icons/fa";
@@ -13,6 +13,7 @@ export default function Header() {
     const [authMode, setAuthMode] = useState("login", false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const refEle = useRef();
 
     const handleChange = (e) => {
         setformData({ ...formData, [e.target.name]: e.target.value });
@@ -21,6 +22,14 @@ export default function Header() {
     const passwordToggle = () => setShowPassword(!showPassword);
     const showSignup = () => setAuthMode("signup");
     const showLoginPage = () => setAuthMode("login");
+
+    
+     const openSecrhHandler = () => {
+        setIsOpen(true);
+       setTimeout(() => {
+         refEle.current?.focus();
+       }, 100); 
+    }
 
     useEffect(() => {
         if (visible || isOpen || mobileMenuOpen) {
@@ -115,6 +124,7 @@ export default function Header() {
                                 <div className="flex items-center border border-gray-300 rounded-md px-4 py-2">
                                     <Search className="text-gray-400 mr-2" />
                                     <input
+                                         ref={refEle}
                                         type="text"
                                         placeholder="Search for products..."
                                         className="flex-1 outline-none bg-transparent"
