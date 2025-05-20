@@ -100,7 +100,7 @@ export default function AcmeGroup() {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className='flex gap-8 lg:flex-row flex-col layoutWidth'>
                     <div className=' lg:w-1/2 w-full'>
                         <div className='AcmeImage h-full'>
