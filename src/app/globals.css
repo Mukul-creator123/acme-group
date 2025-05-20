@@ -151,6 +151,10 @@ body {
   display: none;
 }
 
+.forDes {
+  display: block !important;
+}
+
 @media(max-width: 767px) {
 
   .menuBar,
@@ -161,6 +165,10 @@ body {
 
   .footerHeading {
     font-size: 16px;
+  }
+
+  .InvestorTextSize {
+    font-size: 22px;
   }
 
   .layoutWidth {
@@ -202,16 +210,20 @@ body {
   }
 
   .forMob {
-    display: block;
+    display: block !important;
+    font-size: 28px;
   }
 
   .forDes {
-    display: none;
+    display: none !important;
   }
 
   .cardWidth {
     width: 100%;
     max-height: unset;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    width: 80%;
   }
 
   .footerLogo {
