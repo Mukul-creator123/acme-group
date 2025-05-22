@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState,useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { FaFacebookF, FaInstagram, FaXTwitter, FaEnvelope, FaPhone, FaUser } from 'react-icons/fa6';
 import { Dialog } from 'primereact/dialog';
 import { FaEye } from "react-icons/fa";
@@ -23,12 +23,11 @@ export default function Header() {
     const showSignup = () => setAuthMode("signup");
     const showLoginPage = () => setAuthMode("login");
 
-    
-     const openSecrhHandler = () => {
+    const openSearchHandler = () => {
         setIsOpen(true);
-       setTimeout(() => {
-         refEle.current?.focus();
-       }, 100); 
+        setTimeout(() => {
+            refEle.current?.focus();
+        }, 100);
     }
 
     useEffect(() => {
@@ -68,7 +67,7 @@ export default function Header() {
 
                 <div className='flex lg:flex hidden gap-4 justify-end' style={{ width: "33.3%" }}>
                     <span className='flex gap-2 items-center text-white text-sm'><FaEnvelope className='text-yellow-500' />info@acmegroup.co.in</span>
-                     <div style={{borderLeft: "1px solid #ddd"}}></div>
+                    <div style={{ borderLeft: "1px solid #ddd" }}></div>
                     <span className='flex gap-2 items-center text-white text-sm'><FaPhone className='text-yellow-500' />+91-9077755500</span>
                 </div>
             </div>
@@ -82,7 +81,7 @@ export default function Header() {
                 <img src="/Images/logo.png" alt="Logo" className="h-8" />
                 <div className="flex gap-3 items-center">
                     <button className="text-gray-600">
-                        <svg className="w-5 h-5 hover" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 hover" onClick={openSearchHandler} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
                         </svg>
                     </button>
@@ -108,7 +107,7 @@ export default function Header() {
                 </nav>
 
                 <div className="flex gap-6 items-center">
-                    <button className="text-gray-600" onClick={() => setIsOpen(true)}>
+                    <button className="text-gray-600" onClick={openSearchHandler}>
                         <svg className="w-5 h-5 hover" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
                         </svg>
@@ -118,13 +117,13 @@ export default function Header() {
                         <div className="fixed inset-0 bg-black/50 z-50 flex justify-center items-start pt-20">
                             <div className="bg-white rounded-xl shadow-lg w-full max-w-2xl mx-4 p-4 relative">
                                 <button onClick={() => setIsOpen(false)} className="absolute top-1/2 right-4 text-gray-500 hover:text-gray-800 transform -translate-x-1/2 -translate-y-1/2">
-                                    <X size={20} className='hover'/>
+                                    <X size={20} className='hover' />
                                 </button>
 
                                 <div className="flex items-center border border-gray-300 rounded-md px-4 py-2">
                                     <Search className="text-gray-400 mr-2" />
                                     <input
-                                         ref={refEle}
+                                        ref={refEle}
                                         type="text"
                                         placeholder="Search for products..."
                                         className="flex-1 outline-none bg-transparent"
@@ -141,7 +140,6 @@ export default function Header() {
                         </button>
                     </div>
                 </div>
-
             </header>
 
             {mobileMenuOpen && (
@@ -238,9 +236,9 @@ export default function Header() {
                     <h2 className="md:text-4xl font-sm leading-tight">
                         is <span className="text-yellow-500 font-bold">Efficiently</span>
                     </h2>
-                 
-                  <p className="text-[10px] font-semibold text-gray-700 block lg:hidden">
-                        Lorem ipsum is placeholder text <br/> commonly used in the  graphic.
+
+                    <p className="text-[10px] font-semibold text-gray-700 block lg:hidden">
+                        Lorem ipsum is placeholder text <br /> commonly used in the  graphic.
                     </p>
 
                     <p className="mt-4 text-gray-700 hidden md:block">
