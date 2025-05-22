@@ -66,7 +66,7 @@ const Footer = () => {
 
                     <div className="lg:hidden block flex gap-1 items-center justify-center">
                         <p className="flex items-center lg:text-md text-sm gap-2 lg:justify-start justify-center">
-                            <span><IoCall className="text-orange-400" /></span> +91-9077 7666 00 + 
+                            <span><IoCall className="text-orange-400" /></span> +91-9077 7666 00 +
                         </p>
                         <p className="flex items-center lg:text-md text-sm gap-2 lg:justify-start justify-center">
                             ,91-9077 7555 00
@@ -74,7 +74,7 @@ const Footer = () => {
                     </div>
 
                     <div className="lg:hidden block flex items-center justify-center gap-1">
-                        <MdEmail  className="text-orange-400" /><span>info@acmegroup.co.in</span>
+                        <MdEmail className="text-orange-400" /><span>info@acmegroup.co.in</span>
                     </div>
 
                     <div className="block lg:hidden mt-4">
@@ -84,18 +84,17 @@ const Footer = () => {
                         <p className="mt-2 font-semibold footerHeading">For Updates</p>
                         <p className="text-md">Follow us on Instagram</p>
                         <div className='flex lg:justify-start justify-center gap-6 mt-2'>
-                            <div className="rounded-full bg-[#fff] p-2 w-[35px] h-[35px] hover:bg-[#3d566e] transition">
+                            <div className="rounded-full bg-[#fff] p-2 w-[35px] h-[35px] hover:bg-[#3d566e] cursor-pointer transition">
                                 <img src="/Images/facebook.png" className="w-full h-full object-contain" />
                             </div>
 
-                            <div className="rounded-full bg-[#fff] p-2 w-[35px] h-[35px] hover:bg-[#3d566e] transition">
+                            <div className="rounded-full bg-[#fff] p-2 w-[35px] h-[35px] hover:bg-[#3d566e] transition cursor-pointer">
                                 <img src="/Images/prime_twitter.png" className="w-full h-full object-contain" />
                             </div>
 
-                            <div className="rounded-full bg-[#fff] p-2 w-[35px] h-[35px] hover:bg-[#3d566e] transition">
+                            <div className="rounded-full bg-[#fff] p-2 w-[35px] h-[35px] hover:bg-[#3d566e] transition cursor-pointer">
                                 <img src="/Images/instagram.png" className="w-full h-full object-contain" />
                             </div>
-
                         </div>
                     </div>
                 </div>
