@@ -28,7 +28,7 @@ const AcmeVisionSection = () => {
                         India’s foremost service provider.
                     </p>
                 </div>
-
+{/* kkkkk */}
                 <div className='flex lg:w-1/2 w-full lg:gap-8 gap-4'>
                     <div className="flex flex-wrap flex-col justify-between lg:w-1/2 w-full mt-8 lg:gap-8 gap-4">
                         <div className="bg-white rounded-xl shadow-lg lg:py-20 py-10 flex flex-col pl-6">
